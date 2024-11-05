@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>EDNALG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        .w3-bar-item {
+            font-size: 25px;
+            text-decoration: none;
+            padding: 10px 15px; 
+        }
+
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+        }
+    </style>
+ 
+</head>
+<body class="w3-light-gray">
+    <header>
+        <div class="w3-row w3-container">
+        
+            <div class="w3-col s4 w3-light-gray w3-center">
+              <p></p>
+            </div>
+
+            <div class="w3-col s4  w3-center">
+              <h1>EDNALG</h1>
+            </div>
+            
+            <div class="w3-col s4 w3-center w3-mobile"> 
+                <img src="./Image/Brenda.jpg" class="w3-right"  style="width:15%"><div class="w3-monospace">
+                    <div class="w3-col s5 w3-right w3-mobile"> 
+                    <h2 class=" w3-hover-white">Deconnection</h2> 
+                    </div>
+            </div>
+        </div>
+        <div class="w3-container">
+        <div class="w3-light-gray w3-display-topmidle w3-center w3-border-bottom w3-border-brown w3-padding-32">
+            <a href="accueil.html" class="w3-bar-item w3-hover-brown w3-mobile">Accueil</a>
+            <b href="congé.html" class="w3-bar-item w3-hover-brown w3-text-brown w3-mobile">Congés/RTT</b>
+            <a href="arrêt_maladie.html" class="w3-bar-item w3-hover-brown w3-mobile">Arrêt De Travail</a>
+            <a href="mail.html" class="w3-bar-item w3-hover-brown w3-mobile">Mails</a>
+            <div class="w3-dropdown-hover">
+                <a class="w3-bar-item w3-hover-brown w3-mobile">Administration</a>
+                    <div class="w3-dropdown-content w3-bar-block w3-border">
+                        <a href="contrat de travail.html" class="w3-bar-item w3-button">Contrat de travail</a>
+                        <a href="bulletin de paie.html" class="w3-bar-item w3-button">Bulletin de paie</a>
+                    </div>
+            </div>
+
+            <a href="info.html" class="w3-bar-item w3-hover-brown w3-mobile">Profil</a>
+        </div>
+    </div>
+    </header>
+      
+    <div class="w3-col s4 w3-light-gray w3-center">
+        <p></p>
+      </div>
+
+      <div class="w3-col s4  w3-center">
+          <div class="w3-display-container" style="width: 100%;">
+              <i class="material-icons w3-display-left w3-margin-left w3-text-grey" id="search-icon">search</i>
+              <input id="search" class="w3-input w3-border w3-margin" placeholder=" Recherche" style="padding-left: 30px;">
+      </div>     
+ </div>
+
+
+
+
+
+    <div class="w3-container w3-margin w3-light-gray w3-border">
+
+        <div class="w3-col s4 w3-light-gray w3-center w3-margin-bottom">
+            <p></p>
+          </div>
+        
+          <div class="w3-col s4  w3-center w3-margin-bottom">
+            <a class="w3-round-xxlarge w3-brown w3-padding w3-mobile w3-center w3-margin-right">RTT restant : 2 jours </a>
+            
+            <a class="w3-round-xxlarge w3-brown w3-padding w3-mobile w3-center w3-margin-right">Congés restant : 16 jours</a>
+        </div>
+
+
+
+
+        <div class="w3-row w3-mobile">
+            <div class="w3-col s4 w3-white w3-center">
+                <button class="w3-xxlarge w3-button w3-right w3-white">&#10094;</button>
+            </div>
+            <div class="w3-col s4 w3-white w3-center">
+                <div class="w3-center w3-white"><h2>Octobre 2024</h2></div>
+            </div>
+            <div class="w3-col s4 w3-center w3-white">
+                <button class="w3-xxlarge w3-button w3-left w3-white">&#10095;</button>
+              </div>
+            </div>
+
+            <div class="calendar">
+
+                <div class="w3-text-white w3-brown w3-padding"> <b>Lun</b></div>
+                <div class="w3-text-white w3-brown w3-padding"> <b>Mar</b></div>
+                <div class="w3-text-white w3-brown w3-padding"> <b>Mer</b></div>
+                <div class="w3-text-white w3-brown w3-padding"> <b>Jeu</b></div>
+                <div class="w3-text-white w3-brown w3-padding"> <b>Ven</b></div>
+                <div class="w3-text-white w3-brown w3-padding"> <b>Sam</b></div>
+                <div class="w3-text-white w3-brown w3-padding"> <b>Dim</b></div>
+                
+                <div></div>
+                <div class="w3-light-blue w3-button w3-padding">1</div>
+                <div class="w3-white w3-button w3-padding">2</div>
+                <div class="w3-white w3-button w3-padding">3</div>
+                <div class="w3-white w3-button w3-padding">4</div>
+                <div class="w3-center w3-gray w3-padding">5</div>
+                
+                <div class="w3-center w3-gray w3-padding">6</div>
+                <div class="w3-white w3-button w3-padding">7</div>
+                <div class="w3-white w3-button w3-padding">8</div>
+                <div class="w3-white w3-button w3-padding">9</div>
+                <div class="w3-white w3-button w3-padding">10</div>
+                <div class="w3-white w3-button w3-padding">11</div>
+                <div class="w3-center w3-gray w3-padding">12</div>
+                
+                <div class="w3-center w3-gray w3-padding">13</div>
+                <div class="w3-white w3-button w3-padding">14</div>
+                <div class="w3-aqua w3-button w3-padding">15</div>
+                <div class="w3-aqua w3-button w3-padding">16</div>
+                <div class="w3-aqua w3-button w3-padding">17</div>
+                <div class="w3-white w3-button w3-padding">18</div>
+                <div class="w3-center w3-gray w3-padding">19</div>
+                
+                <div class="w3-center w3-gray w3-padding">20</div>
+                <div class="w3-white w3-button w3-padding">21</div>
+                <div class="w3-white w3-button w3-padding">22</div>
+                <div class="w3-red w3-button w3-padding">23</div>
+                <div class="w3-white w3-button w3-padding">24</div>
+                <div class="w3-white w3-button w3-padding">25</div>
+                <div class="w3-center w3-gray w3-padding">26</div>
+                
+                <div class="w3-center w3-gray w3-padding">27</div>
+                <div class="w3-white w3-button w3-padding">28</div>
+                <div class="w3-purple w3-button w3-padding">29</div>
+                <div class="w3-white w3-button w3-padding">30</div>
+                <div class="w3-white w3-button w3-padding">31</div>
+                </div>
+               
+    </div>
+   
+
+
+    
+
+    <form class="w3-container w3-margin-left ">
+     
+      
+        <!-- Aligner horizontalement en utilisant des spans -->
+        <span>
+          <input class="w3-radio w3-margin-left " type="radio" name="gender" value="male" checked>
+          <label>Congé</label>
+        </span>
+      
+        <span>
+          <input class="w3-radio " type="radio" name="gender" value="female" style="margin-left: 3%">
+          <label>RTT</label>
+        </span>
+      
+      
+      </form>
+
+
+
+    <div class="w3-container">
+
+
+        <div class="w3-row">
+          <div class="w3-col l10 s6  w3-center">
+              <div class=" w3-container w3-margin w3-light-gray">
+                <p> <input class="w3-input w3-border"  placeholder="Message (optionnel)"></p>
+                <a href="https://www.service-public.fr/particuliers/vosdroits/F34151"><img  src="./Image/Pictogrammers-Material-Information.512.png" class="w3-right w3-mobile" style="width:3%"></a>
+
+                <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-brown w3-right w3-mobile w3-round-xxlarge">Envoyer</button>
+        
+          </div>
+          </div>
+          <div class="w3-col l2 s6  w3-center">
+         <div class="w3-container w3-small w3-margin"
+         >
+            <div class="w3-right w3-margin-top">
+                <div class="w3-center "><h2>Légende</h2></div>
+                <div class="w3-orange w3-padding-small">
+                    En attente : <strong>Orange</strong>
+                </div>
+
+                <div class="w3-green w3-padding-small">
+                    Valider : <strong>Vert</strong>
+                </div>
+            </div>
+               
+
+                <div class="w3-right w3-margin-top">
+                    <div class="w3-aqua w3-padding-small">
+                        Congés Payés : <strong>Bleu Clair</strong>
+                    </div>
+        
+                    <div class="w3-blue w3-padding-small">
+                        RTT : <strong>Bleu </strong>
+                    </div>
+        
+                    <div class="w3-red w3-padding-small">
+                        Congés Sans Solde : <strong>Rouge</strong>
+                    </div>
+        
+                    <div class="w3-yellow w3-padding-small">
+                        Congé Maternité : <strong>Jaune</strong>
+                    </div>
+        
+                    <div class="w3-pink w3-padding-small">
+                        Congé Maladie : <strong>Rose</strong>
+                    </div>
+        
+                    <div class="w3-purple w3-padding-small">
+                        Congés Exceptionnels : <strong>Violet</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+     
+        <div id="id01" class="w3-modal">
+
+          <div class="w3-modal-content">
+
+            <div class="w3-container">
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+              <p>Votre demande de congé/RTT à bien été envoyer.</p>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+    <footer class=" w3-light-gray w3-center w3-border-top w3-margin-top">
+        <div class="w3-row">
+            <div class="w3-col s4  w3-center">
+
+               
+                <p>Adresse Postale (de l'entreprise)</p>
+                <p>Numéro de téléphone (de l'entreprise)</p>
+              
+              
+            </div>
+            <div class="w3-col s4  w3-center">
+              <p>Formulaire de Contact</p>
+              <p>Réseau Sociaux</p>
+            </div>
+            <div class="w3-col s4  w3-center">
+              
+                <p>Adresse e-mail (de l'entreprise) </p>
+                <P>etc...</P>
+
+            </div>
+          </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>EDNALG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        .w3-bar-item {
+            font-size: 25px;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+<body class="w3-light-gray">
+    <header>
+        <div class="w3-row w3-container">
+        
+            <div class="w3-col s4 w3-light-gray w3-center">
+              <p></p>
+            </div>
+
+            <div class="w3-col s4  w3-center">
+              <h1>EDNALG</h1>
+            </div>
+
+            <div class="w3-col s4 w3-center w3-mobile"> 
+                <img src="./Image/Brenda.jpg" class="w3-right"  style="width:15%"><div class="w3-monospace">
+                    <div class="w3-col s5 w3-right w3-mobile"> 
+                    <h2 class=" w3-hover-white">Deconnection</h2> 
+                    </div>
+            </div>
+        </div>
+        <div class="w3-container">
+        <div class="w3-light-gray w3-display-topmidle w3-center w3-border-bottom w3-border-brown w3-padding-32">
+            <a href="accueil.html" class="w3-bar-item w3-hover-brown w3-mobile">Accueil</a>
+            <a href="congé.html" class="w3-bar-item w3-hover-brown w3-mobile">Congés/RTT</a>
+            <a href="arrêt_maladie.html" class="w3-bar-item w3-hover-brown w3-mobile">Arrêt De Travail</a>
+            <b href="mail.html" class="w3-bar-item w3-hover-brown w3-text-brown w3-mobile">Mails</b>
+            <div class="w3-dropdown-hover">
+                <a class="w3-bar-item w3-hover-brown w3-mobile">Administration</a>
+                    <div class="w3-dropdown-content w3-bar-block w3-border">
+                        <a href="contrat de travail.html" class="w3-bar-item w3-button">Contrat de travail</a>
+                        <a href="bulletin de paie.html" class="w3-bar-item w3-button">Bulletin de paie</a>
+                    </div>
+                  </div>
+            <a href="info.html" class="w3-bar-item w3-hover-brown w3-mobile">Profil</a>
+        </div>
+    </div>
+    </header>
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-light-gray">
+        <b href="#" class="w3-bar-item w3-button w3-brown">Boîte de réception</b>
+        <a href="#" class="w3-bar-item w3-button">Envoyés</a>
+        <a href="#" class="w3-bar-item w3-button">Brouillons</a>
+        <a href="#" class="w3-bar-item w3-button">Corbeille</a>
+    </div>
+
+    <div class="content">
+        <div class="w3-display-container" style="width: 50%;">
+            <i class="material-icons w3-display-left w3-margin-left w3-text-grey" id="search-icon">search</i>
+            <input id="search" class="w3-input w3-border w3-margin" placeholder=" Recherche" style="padding-left: 30px;">
+        </div>
+
+        <div class="w3-card-4 w3-white w3-padding" style="padding-top: 40px;">
+            <div class="w3-hover-shadow w3-padding w3-border">
+                <strong>Moi</strong><br>
+                <small>Réponse demande de congé de Gérard</small>
+                <span class="w3-right">Envoyer a 12:30</span>
+            </div>
+
+            <div class="w3-hover-shadow w3-padding">
+                <strong>Gérard</strong><br>
+                <small>Demande de congé de Gérard</small>
+                <span class="w3-right">Reçu a 11:00</span>
+            </div>
+        </div>
+    
+        <div class="w3-card-4 w3-margin-top w3-white w3-padding">
+            <h3>Réponse demande de congé de Gérard</h3>
+            <p><strong>De : </strong>Moi (Brenda.RH@ednald.com)</p>
+            <p><strong>À : </strong>Gérard</p>
+            <hr>
+            <p>Bonjour,</p>
+            <p>Oui, vous pouvez.</p>
+            <p>Cordialement,<br>Brenda RH informatique</p>
+        </div>
+        <button class="w3-button w3-brown w3-right w3-margin">Répondre</button>
+        <button class="w3-button w3-brown w3-right w3-margin">Nouveau message</button>
+        
+    </div>
+    
+    <footer class=" w3-light-gray w3-center w3-border-top w3-margin-top">
+        <div class="w3-row">
+            <div class="w3-col s4  w3-center">
+
+               
+                <p>Adresse Postale (de l'entreprise)</p>
+                <p>Numéro de téléphone (de l'entreprise)</p>
+              
+              
+            </div>
+            <div class="w3-col s4  w3-center">
+              <p>Formulaire de Contact</p>
+              <p>Réseau Sociaux</p>
+            </div>
+            <div class="w3-col s4  w3-center">
+              
+                <p>Adresse e-mail (de l'entreprise) </p>
+                <P>etc...</P>
+
+            </div>
+          </div>
+    </footer>
+</body>
+</html>
